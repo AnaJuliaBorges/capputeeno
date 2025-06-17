@@ -1,6 +1,9 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: ##F0F0F5;
+  --bg-secondary: #F3F5F6;
+  --text-dark: #737380;
+  --logo-color: #5D5D6D;
+  --delete-color: #DE3838;
 }
 
 html,
