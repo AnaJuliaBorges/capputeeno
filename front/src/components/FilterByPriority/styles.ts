@@ -34,6 +34,7 @@ export const OptionsFilter = styled.ul`
   top: 100%;
   right: 0;
   width: 176px;
+  z-index: 999;
 
   li {
     color: var(--text-dark);
