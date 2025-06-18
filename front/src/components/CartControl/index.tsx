@@ -1,4 +1,4 @@
-import { CartIcon } from "@/assets/cart-icon";
+import { CartIcon } from "@/assets/cartIcon";
 import { useLocalStorage } from "@/hooks/uselocalStorage";
 import { CartCount, Container } from "./styles";
 

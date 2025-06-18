@@ -1,4 +1,4 @@
-import { SearchLoupe } from "@/assets/search-loupe";
+import { SearchLoupe } from "@/assets/searchLoupe";
 import { Input, Inputcontainer } from "./styles";
 import { InputHTMLAttributes } from "react";
 
