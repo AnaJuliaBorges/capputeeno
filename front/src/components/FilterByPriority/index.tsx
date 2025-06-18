@@ -30,7 +30,7 @@ export function FilterByPriority() {
     return (
       <FilterContainer>
         <button onClick={handleopen}>
-          <span>Organizar por</span>
+          <p>Organizar por</p>
           <ArrowIcon />
         </button>
 
