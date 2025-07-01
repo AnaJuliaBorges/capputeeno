@@ -1,5 +1,6 @@
 "use client"
 
+import { useFilter } from "@/hooks/useFilter";
 import { CartControl } from "../CartControl";
 import SearchBar from "../SearchBar";
 import { Container, Logo } from "./styles";
@@ -11,11 +12,13 @@ const sairaStencil = Saira_Stencil_One({
 });
 
 export default function Header() {
+  const {setSearch, search} = useFilter();
+
   return(
     <Container>
       <Logo className={sairaStencil.className}>Capputeeno</Logo>
       <div>
-        <SearchBar placeholder="Procurando por algo específico?"/>
+        <SearchBar placeholder="Procurando por algo específico?" value={search} handleChange={setSearch} />
         <CartControl />
       </div>
     </Container>
