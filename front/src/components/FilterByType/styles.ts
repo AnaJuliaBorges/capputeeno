@@ -18,9 +18,9 @@ export const FilterItem = styled.li<FilterItemProps>`
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--text-dark);
+  color: ${({theme}) => theme.colors.textDarker};
   cursor: pointer;
   
   font-weight: ${({selected}) => selected ? '600' : ' 400'};
-  border-bottom: ${({selected}) => selected ? '4px solid var(--orange-low)' : ''};
+  border-bottom: ${({selected, theme}) => selected ? `4px solid ${theme.colors.orangeLow}` : ''};
 `

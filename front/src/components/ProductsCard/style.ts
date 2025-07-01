@@ -26,19 +26,19 @@ export const Card = styled.div`
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
-    color: var(--text-dark-2);
+    color: ${({theme}) => theme.colors.textDarker};
   }
 
   p {
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
-    color: var(--shapes-dark);
+    color: ${({theme}) => theme.colors.shapesDark};
   }
 `
 
 export const Divider = styled.div`
   width: 228px;
   height: 1px;
-  background-color: var(--shapes);
+  background-color: ${({theme}) => theme.colors.shapes};
 `

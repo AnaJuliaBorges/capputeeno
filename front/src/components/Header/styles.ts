@@ -5,7 +5,7 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 160px;
+  padding: 12px 24px;
 
   > div {
     display: flex;
@@ -13,11 +13,19 @@ export const Container = styled.header`
     justify-content: center;
     gap: 24px;
   }
+
+  @media (min-width: ${props => props.theme.desktopBreakpoint}) {
+    padding: 20px 160px;
+  }
 `
 
 export const Logo = styled.a`
-  color: var(--logo-color);
-  font-size: 40px;
+  color: ${({theme}) => theme.colors.logoColor};
+  font-size: 24px;
   line-height: 150%;
+
+  @media (min-width: ${props => props.theme.desktopBreakpoint}) {
+    font-size: 40px;
+  }
 `;
 

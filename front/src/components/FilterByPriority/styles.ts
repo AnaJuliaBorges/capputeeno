@@ -16,7 +16,7 @@ export const FilterContainer = styled.div`
     font-family: inherit;
     font-size: 14px;
     line-height: 22px;
-    color: var(--text-dark);
+    color: ${({ theme }) => theme.colors.textDarker};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ export const OptionsFilter = styled.ul`
   z-index: 999;
 
   li {
-    color: var(--text-dark);
+    color: ${({ theme }) => theme.colors.textDarker};
     font-size: 14px;
     cursor: pointer;
   }

@@ -11,7 +11,7 @@ export const CartCount = styled.span`
   padding: 0px 5px;
   font-size: 10px;
 
-  background-color: var(--delete-color);
+  background-color: ${({theme}) => theme.colors.deleteColor};
   color: white;
 
   margin-left: -10px;
