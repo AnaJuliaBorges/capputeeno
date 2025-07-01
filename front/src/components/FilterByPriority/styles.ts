@@ -31,8 +31,10 @@ export const OptionsFilter = styled.ul`
   border-radius: 4px;
   padding: 12px 16px;
   list-style: none;
+
   top: 100%;
-  right: 0;
+  right: 8px;
+
   width: 176px;
   z-index: 999;
 

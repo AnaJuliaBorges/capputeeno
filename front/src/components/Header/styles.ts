@@ -21,8 +21,12 @@ export const Container = styled.header`
 
 export const Logo = styled.a`
   color: ${({theme}) => theme.colors.logoColor};
-  font-size: 24px;
+  font-size: 20px;
   line-height: 150%;
+
+  @media (min-width: ${props => props.theme.tabletBreakpoint}) {
+    font-size: 24px;
+  }
 
   @media (min-width: ${props => props.theme.desktopBreakpoint}) {
     font-size: 40px;

@@ -8,9 +8,13 @@ const PageWrapper = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 34px 160px;
+  padding: 12px 24px;
   height: 100%;
   background-color: ${({theme}) => theme.colors.bgPrimary};
+
+  @media (min-width: ${({theme}) => theme.desktopBreakpoint}) {
+    padding: 34px 160px;
+  }
 `
 
 export default function Home() {

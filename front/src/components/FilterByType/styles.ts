@@ -14,8 +14,8 @@ export const FilterList = styled.ul`
 
 export const FilterItem = styled.li<FilterItemProps>`
   font-family: inherit;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: ${({theme}) => theme.colors.textDarker};
@@ -23,4 +23,9 @@ export const FilterItem = styled.li<FilterItemProps>`
   
   font-weight: ${({selected}) => selected ? '600' : ' 400'};
   border-bottom: ${({selected, theme}) => selected ? `4px solid ${theme.colors.orangeLow}` : ''};
+
+  @media (min-width: ${({theme}) => theme.desktopBreakpoint}) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 `

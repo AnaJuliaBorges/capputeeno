@@ -3,6 +3,7 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     desktopBreakpoint: string;
+    tabletBreakpoint: string;
 
 
     colors: {
