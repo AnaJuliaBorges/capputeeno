@@ -3,7 +3,7 @@ import { useLocalStorage } from "@/hooks/uselocalStorage";
 import { CartCount, Container } from "./styles";
 
 export function CartControl() {
-   const { value } = useLocalStorage('cart-items', [])
+   const { value } = useLocalStorage('cart', [])
 
   return (
     <Container>

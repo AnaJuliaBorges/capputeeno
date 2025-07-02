@@ -8,13 +8,29 @@ import { formatPrice } from '@/utils/formatPrice'
 import { useSearchParams } from 'next/navigation'
 import { useProduct } from '@/hooks/useProduct'
 import { ShoppingBagIcon } from '@/assets/shoppingBag'
+import { Product as ProductType } from '@/types/products'
 
 export default function Product() {
   const searchParams = useSearchParams()
   const id = searchParams.get('id')
 
   const data = useProduct(id!)
-  console.log(data)
+  
+  const addToCart = () => {
+    if (!data) return
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]')
+    const existingProduct = cart.find((item: ProductType) => item.id === id)
+
+    if (existingProduct) {
+      existingProduct.quantity += 1
+    } else {
+      cart.push({ ...data, quantity: 1 })
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart))
+    alert('Produto adicionado ao carrinho!')
+  }
+
 
   return (
     <DefaultPageLayout>
@@ -33,7 +49,7 @@ export default function Product() {
                 <p>{data?.description}</p>
               </div>
             </ProductInfo>
-            <button>
+            <button onClick={addToCart}>
               <ShoppingBagIcon />
               Adicionar ao carrinho
             </button>
