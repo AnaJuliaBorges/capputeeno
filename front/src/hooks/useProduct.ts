@@ -8,6 +8,7 @@ const fetcher = (productId: string): AxiosPromise<ProductFetchResponse> => {
       query: `
         query{
           Product(id: "${productId}"){
+            id,
             name,
             category,
             price_in_cents,
@@ -24,6 +25,7 @@ export function useProduct(id: string) {
     queryFn: () => fetcher(id),
     queryKey: ['product', id],
     enabled: !!id,
+    staleTime: 1000 * 60 * 5, // 5 minutes
   });
 
   return data?.data?.data?.Product;
