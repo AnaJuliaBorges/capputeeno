@@ -10,4 +10,11 @@ export interface Product {
   id: string
   image_url: string,
   category: string,
+  description?: string,
+}
+
+export interface ProductFetchResponse {
+  data: {
+    Product: Product
+  }
 }

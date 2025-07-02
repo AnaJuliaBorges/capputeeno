@@ -14,6 +14,7 @@ declare module 'styled-components' {
       shapesDark: string,
 
       text: string,
+      secondaryText: string,
       textDarker: string,
 
       logoColor: string,

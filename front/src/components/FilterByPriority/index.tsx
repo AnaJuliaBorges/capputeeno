@@ -1,8 +1,8 @@
 import { ArrowIcon } from "@/assets/arrow";
 import { FilterContainer, OptionsFilter } from "./styles";
 import { useState } from "react";
-import { useFilter } from "@/hooks/useFilter";
 import { PriorityTypes } from "@/types/priorityTypes";
+import { useFilter } from "@/hooks/useFilter";
 
 interface PriorityItem {
   id: number;

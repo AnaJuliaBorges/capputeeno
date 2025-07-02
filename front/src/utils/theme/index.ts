@@ -13,6 +13,7 @@ const myTheme: DefaultTheme = {
     shapesDark: '#09090A',
 
     text: '#737380',
+    secondaryText: '#617480',
     textDarker: '#41414D',
     
     logoColor: '#5D5D6D',

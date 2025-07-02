@@ -1,6 +1,6 @@
-import { useFilter } from "@/hooks/useFilter";
 import { FilterType } from "@/types/filterTypes";
 import { FilterItem, FilterList } from "./styles";
+import { useFilter } from "@/hooks/useFilter";
 
 interface FilterItem {
   id: number;

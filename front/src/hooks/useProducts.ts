@@ -1,9 +1,9 @@
 import { ProductsFetchResponse } from "@/types/products";
 import { useQuery } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios";
-import { useFilter } from "./useFilter";
 import { mountQuery } from "@/utils/graphqlFIlters";
 import { useDeferredValue } from "react";
+import { useFilter } from "./useFilter";
 
 const fetcher = (query: string): AxiosPromise<ProductsFetchResponse> => {
   return axios.post(

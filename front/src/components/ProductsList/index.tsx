@@ -1,9 +1,9 @@
 "use client"
 
-import { useProducts } from "@/hooks/useProducts"
 import { Container } from "./styles";
 import { ProductCard } from "../ProductsCard";
 import { Product } from "@/types/products";
+import { useProducts } from "@/hooks/useProducts";
 
 export function ProductsList() {
   const { data } = useProducts();
