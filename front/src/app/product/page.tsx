@@ -21,7 +21,7 @@ export default function Product() {
       <Container>
         <BackButton navigate='/'/>
         <section>
-          <img src={data?.image_url} />
+          <img src={data?.image_url} alt={data?.name} />
           <div>
             <ProductInfo>
               <span>{data?.category}</span>
