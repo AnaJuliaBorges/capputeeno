@@ -32,7 +32,7 @@ export default function CartPage() {
   return (
     <DefaultPageLayout>
       <Container>
-        <BackButton navigate='/' />
+        <BackButton />
         {value.length === 0 ? (
           <section>
             <div>

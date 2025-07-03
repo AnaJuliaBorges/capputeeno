@@ -5,6 +5,7 @@ export const Container = styled.li`
   background: white;
   border-radius: 8px;
   width: 100%;
+  cursor: pointer;
 
   @media (max-width: ${({theme}) => theme.tabletBreakpoint}) {
       flex-direction: column;

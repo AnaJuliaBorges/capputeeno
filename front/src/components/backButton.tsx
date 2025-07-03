@@ -21,15 +21,13 @@ const Button = styled.button`
   }
 `
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  navigate: string
-}
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export default function BackButton(props: ButtonProps) {
   const router = useRouter();
 
   const handleNavigate = () => {
-    router.push(props.navigate);
+    router.back();
   }
 
   return (

@@ -36,7 +36,7 @@ export default function Product() {
   return (
     <DefaultPageLayout>
       <Container>
-        <BackButton navigate='/'/>
+        <BackButton />
         <section>
           <img src={data?.image_url} alt={data?.name} />
           <div>
