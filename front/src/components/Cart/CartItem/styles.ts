@@ -5,16 +5,16 @@ export const Container = styled.li`
   background: white;
   border-radius: 8px;
   width: 100%;
-  cursor: pointer;
-
+  
   @media (max-width: ${({theme}) => theme.tabletBreakpoint}) {
-      flex-direction: column;
+    flex-direction: column;
   }
-
+  
   img {
     width: 256px;
     height: auto;
     border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
     
     @media (max-width: ${({theme}) => theme.tabletBreakpoint}) {
       width: 100%;

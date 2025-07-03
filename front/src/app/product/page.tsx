@@ -29,7 +29,6 @@ export default function Product() {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart))
-    alert('Produto adicionado ao carrinho!')
   }
 
 

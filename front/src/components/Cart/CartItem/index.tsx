@@ -23,8 +23,8 @@ export function CartItem({ product, handleUpdateQuantity, handleDeleteItem } : C
   }
 
   return (
-    <Container onClick={handleNavigate}>
-      <img src={product.image_url} alt={product.name} />
+    <Container>
+      <img src={product.image_url} alt={product.name} onClick={handleNavigate}/>
       <Details>
         <HeaderItem>
           <h2>{product.name}</h2>
