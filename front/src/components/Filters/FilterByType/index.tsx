@@ -13,7 +13,7 @@ export function FilterByType() {
 
   const filterItems: FilterItem[] = [
     {id: 1, text: 'Todos os produtos', type: FilterType.ALL},
-    {id: 2, text: 'Camisas', type: FilterType.SHIRT},
+    {id: 2, text: 'Camisetas', type: FilterType.SHIRT},
     {id: 3, text: 'Canecas', type: FilterType.MUG},
   ]
 

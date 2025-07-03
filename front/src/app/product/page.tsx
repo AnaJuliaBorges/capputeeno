@@ -9,6 +9,7 @@ import { useSearchParams } from 'next/navigation'
 import { useProduct } from '@/hooks/useProduct'
 import { ShoppingBagIcon } from '@/assets/shoppingBag'
 import { Product as ProductType } from '@/types/products'
+import { formatCategory } from '@/utils/formatcategory'
 
 export default function Product() {
   const searchParams = useSearchParams()
@@ -40,7 +41,7 @@ export default function Product() {
           <img src={data?.image_url} alt={data?.name} />
           <div>
             <ProductInfo>
-              <span>{data?.category}</span>
+              <span>{formatCategory(data?.category ?? '')}</span>
               <h2>{data?.name}</h2>
               <span>{formatPrice(data?.price_in_cents ?? 0)}</span>
               <p>*Frete de R$40,00 para todo o Brasil. Grátis para compras acima de R$900,00.</p>
