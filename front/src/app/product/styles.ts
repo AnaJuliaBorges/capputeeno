@@ -13,9 +13,18 @@ export const Container = styled.div`
     gap: 32px;
     margin-top: 24px;
 
+    @media (max-width: ${({theme}) => theme.tabletBreakpoint}) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       max-width: 640px;
       width: 50%;
+
+      @media (max-width: ${({theme}) => theme.tabletBreakpoint}) {
+        width: 100%;
+      }
     }
 
     > div {
@@ -41,7 +50,11 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 12px
+        gap: 12px;
+
+        @media (max-width: ${({theme}) => theme.tabletBreakpoint}) {
+          margin-top: 24px;
+        }
       }
     }
   }
