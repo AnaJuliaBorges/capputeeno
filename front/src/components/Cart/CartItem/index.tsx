@@ -3,6 +3,7 @@ import { ProductInCart } from '@/types/products'
 import { formatPrice } from '@/utils/formatPrice'
 import React, { ChangeEvent } from 'react'
 import { Container, Details, FooterItem, HeaderItem } from './styles';
+import { useRouter } from 'next/navigation';
 
 interface CartItemsProps {
   product: ProductInCart;
@@ -11,13 +12,18 @@ interface CartItemsProps {
 }
 
 export function CartItem({ product, handleUpdateQuantity, handleDeleteItem } : CartItemsProps) {
+  const router = useRouter();
 
   const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     handleUpdateQuantity(product.id, Number(e.target.value))
   }
 
+  const handleNavigate = () => {
+    router.push(`/product?id=${product.id}`);
+  }
+
   return (
-    <Container>
+    <Container onClick={handleNavigate}>
       <img src={product.image_url} alt={product.name} />
       <Details>
         <HeaderItem>
