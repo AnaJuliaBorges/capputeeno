@@ -1,8 +1,8 @@
 "use client"
 
 import { DefaultPageLayout } from "@/components/defaultPageLayout";
-import { FilterBar } from "@/components/FilterBar";
-import { ProductsList } from "@/components/ProductsList";
+import { FilterBar } from "@/components/Filters/FilterBar";
+import { ProductsList } from "@/components/Products/ProductsList";
 import styled from "styled-components";
 
 const PageWrapper = styled.main`

@@ -10,8 +10,6 @@ interface DefaultProvidersProps {
   children: ReactNode
 } 
 
-
-
 export default function DefaultProviders({ children }: DefaultProvidersProps) {
   const client = new QueryClient();
 
