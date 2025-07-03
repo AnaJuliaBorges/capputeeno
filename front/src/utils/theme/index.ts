@@ -2,7 +2,7 @@ import { DefaultTheme } from 'styled-components';
 
 
 const myTheme: DefaultTheme = {
-  desktopBreakpoint: '968px',
+  desktopBreakpoint: '1280px',
   tabletBreakpoint: '768px',
 
   colors: {
