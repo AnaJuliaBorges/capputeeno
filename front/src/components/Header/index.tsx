@@ -1,10 +1,11 @@
 "use client"
 
 import { useFilter } from "@/hooks/useFilter";
-import { CartControl } from "../CartControl";
-import SearchBar from "../SearchBar";
 import { Container, Logo } from "./styles";
 import { Saira_Stencil_One } from "next/font/google";
+import { CartControl } from "../Cart/CartControl";
+import SearchBar from "../Filters/SearchBar";
+import { useRouter } from "next/navigation";
 
 const sairaStencil = Saira_Stencil_One({
   weight: '400',
@@ -14,9 +15,15 @@ const sairaStencil = Saira_Stencil_One({
 export default function Header() {
   const {setSearch, search} = useFilter();
 
+  const router = useRouter();
+  
+    const handleNavigate = () => {
+      router.push("/");
+    }
+ 
   return(
     <Container>
-      <Logo className={sairaStencil.className}>Capputeeno</Logo>
+      <Logo className={sairaStencil.className} onClick={handleNavigate}>Capputeeno</Logo>
       <div>
         <SearchBar placeholder="Procurando por algo específico?" value={search} handleChange={setSearch} />
         <CartControl />

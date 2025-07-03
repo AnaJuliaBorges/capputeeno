@@ -23,6 +23,7 @@ export const Logo = styled.a`
   color: ${({theme}) => theme.colors.logoColor};
   font-size: 20px;
   line-height: 150%;
+  cursor: pointer;
 
   @media (min-width: ${props => props.theme.tabletBreakpoint}) {
     font-size: 24px;
