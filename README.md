@@ -1,6 +1,6 @@
 # 🚀 Front end challenge Rocketseat
 
-![Protótipo](https://storage.googleapis.com/xesque-dev/challenge-images/prototipo.png?42)
+<img width="1610" height="1064" alt="capputeno" src="https://github.com/user-attachments/assets/a8888e1d-ca0d-4b1c-bbe1-1401481df618" />
 
 Um e-commerce para venda de canecas e camisetas que tem as seguintes funcionalidades:
 - [ ] Catálogo de produtos com paginação (em andamento)
@@ -16,6 +16,30 @@ Um e-commerce para venda de canecas e camisetas que tem as seguintes funcionalid
 - Utilize o local storage para gerenciar o carrinho
 - Consuma nossa **API GraphQL** rodando o comando `yarn start` na pasta `api`
 
+## Configuração do Ambiente Local
+
+### Configuração do Backend (API)
+1. Acesse o diretório da API e instale as dependências:
+   ```bash
+   cd api && yarn install
+   ```
+2. Inicie o servidor da API:
+   ```bash
+   yarn start
+   ```
+   A API estará disponível em `http://localhost:3333/`
+
+### Configuração do Frontend
+1. Em um novo terminal, acesse o diretório do frontend:
+   ```bash
+   cd front && yarn install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   yarn dev
+   ```
+3. O aplicativo abrirá automaticamente no seu navegador padrão em `http://localhost:3000` (ou porta similar)
+
 ## ✔️ Preocupações
 
 - Gerenciamento de estado
@@ -29,6 +53,4 @@ Um e-commerce para venda de canecas e camisetas que tem as seguintes funcionalid
 
 ---
 
-_O desafio recrutamento Rocketseat._
-
-Made with 💜 at Rocketseat
+Developed by Ana Julia Borges [Linkedin](https://www.linkedin.com/in/anajuliaborges/) and [GitHub](https://github.com/AnaJuliaBorges).
